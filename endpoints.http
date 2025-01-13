@@ -1,0 +1,15 @@
+###
+GET http://localhost:5168/people
+
+###
+
+POST http://localhost:5168/people
+Content-Type: application/json
+
+{
+  "id": "id-1",
+  "name": "Roggy",
+  "age": 30
+}
+
+###
