@@ -1,0 +1,13 @@
+networks:
+  db_data:
+    driver: bridge
+
+services:
+  db:
+    image: mongo:7
+    container_name: db
+    networks:
+      - db_data
+    ports:
+      - "27017:27017"
+    
